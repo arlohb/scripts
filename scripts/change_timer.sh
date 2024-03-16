@@ -7,7 +7,7 @@ new_time=$2
 mkdir -p ~/.config/systemd/user/${timer}.timer.d
 
 # Make override file
-echo -e "[Timer]\nOnUnitActiveSec=${new_time}" \
+echo -e "[Timer]\nOnUnitActiveSec=${new_time}\nOnBootSec=${new_time}" \
     > ~/.config/systemd/user/${timer}.timer.d/override.conf
 
 # Load changes
