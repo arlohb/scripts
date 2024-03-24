@@ -33,6 +33,8 @@
 
               change_timer = [ ];
 
+              bridge_audio = with pkgs; [ pipewire ];
+
             })
           );
       }
